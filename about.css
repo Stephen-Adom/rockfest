@@ -1,0 +1,234 @@
+/* ABOUT PAGE CSS */
+
+#about-headline {
+  width: 100%;
+  min-height: 400px;
+  background-image: url('./assets/images/about_bg_01.png');
+  background-position: 23px 45px;
+  background-size: 85%;
+  background-repeat: no-repeat;
+  background-color: #f7f7f7;
+}
+
+#about-headline .container {
+  padding: 5rem 1.5rem 1rem 1.5rem;
+  text-align: center;
+}
+
+#about-headline .headline-title {
+  font-size: 1.6rem;
+  color: var(--orange) !important;
+  font-weight: 900 !important;
+  font-family: 'cocoGothic', 'Lato', sans-serif;
+}
+
+#about-headline .event-summary {
+  width: 100%;
+  margin-top: 47px;
+  background: #fff;
+  border: 2px solid #e4e4e4 !important;
+}
+
+#about-headline .event-summary .card-body p {
+  color: #7d7d7d;
+}
+
+.contact-summary {
+  color: #85848a;
+  font-weight: 600;
+}
+
+.contact-summary a {
+  color: #85848a;
+  font-weight: 900;
+}
+
+.about-logo-copyright {
+  background-color: #fff;
+}
+
+.copyright-section-title {
+  width: 68%;
+  margin: auto;
+}
+
+.logo-copyright-text {
+  width: 85%;
+  margin: auto;
+  text-align: center;
+  font-size: 14px;
+  color: #85848a;
+  font-weight: 600;
+  margin-top: 2rem;
+}
+
+.logo-display .logo-name {
+  font-size: 2rem;
+}
+
+#event-history .history-text {
+  width: 85%;
+  margin: auto;
+  text-align: center;
+  font-size: 14px;
+  color: #85848a;
+  font-weight: 600;
+  margin-top: 2rem;
+}
+
+.event-list {
+  width: 95%;
+  margin: auto;
+}
+
+.event-history-card {
+  border: none;
+  border-radius: 0;
+  width: 100%;
+  height: 250px;
+  background-image: url('./assets/images/festivalphoto-1.png');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.event-history-card::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: inherit;
+  background-color: rgb(163 35 22 / 60%);
+  z-index: 1;
+  transition: all 0.3s ease-in-out;
+}
+
+.event-history-card:hover {
+  cursor: pointer;
+}
+
+.event-history-card:hover::after {
+  background-color: rgb(163 35 22 / 5%);
+}
+
+.event-record {
+  z-index: 10;
+  width: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.event-history-card:hover .event-record {
+  opacity: 0;
+}
+
+.event-record h1 {
+  font-size: 2.5rem;
+}
+
+.about-footer {
+  background-color: #fff;
+  color: var(--dark);
+}
+
+/* stylelint-disable-next-line no-descending-specificity */
+.about-footer p {
+  font-size: 14px;
+}
+
+/* ABOUT PAGE CSS */
+
+/* Medium devices (tablets, 768px and up */
+@media (min-width: 768px) {
+  #about-headline {
+    width: 100%;
+    min-height: 400px;
+    background-image: url('./assets/images/about_bg_01.png');
+    background-position: 6px 100px;
+    background-size: 95%;
+    background-repeat: no-repeat;
+    background-color: #f7f7f7;
+  }
+
+  #about-headline .headline-title {
+    width: 70%;
+    margin: auto;
+    font-size: 2.5rem;
+    font-family: 'cocoGothic', 'Lato', sans-serif;
+    position: relative;
+  }
+
+  .about-headline .headline-title::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    width: 40px;
+    height: 1px;
+    background-color: var(--orange);
+    transform: translateX(-50%);
+    bottom: -15px;
+  }
+
+  .logo-display {
+    width: 60%;
+    margin: auto;
+  }
+
+  .logo-display .card-body {
+    padding: 32px;
+  }
+
+  .logo-display .logo-name {
+    font-size: 2.5rem;
+  }
+
+  #event-history .container {
+    padding-top: 61px !important;
+    padding-bottom: 140px !important;
+  }
+
+  .about-footer {
+    color: #fff;
+    background-color: var(--dark);
+  }
+
+  .about-footer p {
+    font-size: 16px;
+  }
+}
+
+@media (min-width: 992px) {
+  #about-headline {
+    width: 100%;
+    min-height: 600px;
+    margin-top: 80px;
+    background-position: 228px 82px;
+    background-size: 69%;
+  }
+
+  #about-headline .headline-title {
+    width: 50%;
+    margin: auto;
+  }
+
+  #about-headline .event-summary {
+    width: 75%;
+    margin: 47px auto;
+  }
+
+  .logo-copyright-text {
+    width: 65%;
+  }
+
+  .logo-display {
+    width: 34%;
+    margin: auto;
+  }
+
+  .event-history-card {
+    height: 300px;
+  }
+}

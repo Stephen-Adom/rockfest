@@ -5,6 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
+      rel="icon"
+      type="image/x-icon"
+      href="./assets/images/rock_fest_logo_2.png"
+    />
+    <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/css/bootstrap.min.css"
       integrity="sha512-SbiR/eusphKoMVVXysTKG/7VseWii+Y3FdHrt0EpKgpToZeemhqHeZeLWLhJutz/2ut2Vw1uQEj2MbRF+TVBUA=="
@@ -12,10 +17,137 @@
       referrerpolicy="no-referrer"
     />
     <link rel="stylesheet" href="./index.css" />
+    <link rel="stylesheet" href="./about.css" />
     <title>Rockfest - Music Festival Event</title>
   </head>
   <body>
-    <h1>Welcome to Rock Festival</h1>
+    <!-- OFFCANVAS NAVBAR-->
+    <div
+      class="offcanvas offcanvas-end"
+      tabindex="-1"
+      id="sidebar"
+      aria-labelledby="sidebarLabel"
+    >
+      <div class="offcanvas-header">
+        <div class="offcanvas-title" id="sidebarLabel">
+          <a
+            href="#"
+            class="logo d-flex align-items-center justify-content-center gap-1"
+            data-bs-dismiss="offcanvas"
+          >
+            <img
+              src="assets/images/rock_fest_logo.jpg"
+              width="55px"
+              alt="rock fest"
+            />
+            <h5 class="logo-name mb-0">
+              rock<span class="logo-name-orange">fest</span>
+            </h5>
+          </a>
+        </div>
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="offcanvas"
+          aria-label="Close"
+        ></button>
+      </div>
+      <div class="offcanvas-body">
+        <ul class="list-group"></ul>
+
+        <div class="d-grid mt-4">
+          <a href="#" type="button" class="navbar-btn">Buy Ticket</a>
+        </div>
+      </div>
+    </div>
+    <!-- OFFCANVAS NAVBAR-->
+
+    <header class="fixed-top">
+      <div class="subheader">
+        <div
+          class="container d-flex align-items-center justify-content-end py-1 gap-4"
+        >
+          <div class="social-links d-flex align-items-center gap-3">
+            <a href="#">
+              <img
+                src="./assets/images/facebook-app-symbol.png"
+                width="16px"
+                alt="facebook"
+              />
+            </a>
+
+            <a href="#">
+              <img
+                src="./assets/images/twitter.png"
+                width="16px"
+                alt="twitter"
+              />
+            </a>
+          </div>
+
+          <div class="sub-links d-flex align-items-center gap-4">
+            <a href="#">English</a>
+            <a href="#">My Page</a>
+            <a href="#">Logout</a>
+          </div>
+        </div>
+      </div>
+      <nav class="navbar navbar-expand-lg">
+        <div class="container">
+          <button
+            class="navbar-toggler border border-0"
+            type="button"
+            aria-label="Toggle navigation"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#sidebar"
+            aria-controls="sidebarNavbar"
+          >
+            <img
+              src="./assets/images/burger-bar.png"
+              width="40px"
+              alt="menu bars"
+            />
+          </button>
+          <a class="navbar-brand d-none d-lg-block" href="#">
+            <div
+              class="logo d-flex align-items-center justify-content-center gap-1"
+            >
+              <img
+                src="assets/images/rock_fest_logo.jpg"
+                width="55px"
+                alt="rock fest"
+              />
+              <h5 class="logo-name">
+                rock<span class="logo-name-orange">fest</span>
+              </h5>
+            </div>
+          </a>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mb-2 mb-lg-0"></ul>
+            <a href="#" title="Buy ticket" class="navbar-btn">Buy Ticket</a>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main id="main"></main>
+
+    <button type="button" title="Scroll to top" class="scroll_to_top hide">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke-width="1.5"
+        stroke="currentColor"
+        class="w-6 h-6 scroll_to_top_icon"
+      >
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          d="M3 16.5v2.25A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75V16.5m-13.5-9L12 3m0 0l4.5 4.5M12 3v13.5"
+        />
+      </svg>
+    </button>
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/js/bootstrap.bundle.min.js"
       integrity="sha512-i9cEfJwUwViEPFKdC1enz4ZRGBj8YQo6QByFTF92YXHi7waCqyexvRD75S5NVTsSiTv7rKWqG9Y5eFxmRsOn0A=="
