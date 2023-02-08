@@ -1,4 +1,5 @@
 import homePage from './home.js';
+import aboutPage from './about.js';
 
 const main = document.querySelector('#main');
 const scrollToTopBtn = document.querySelector('.scroll_to_top');
@@ -13,6 +14,7 @@ const navigationLinks = [
   {
     label: 'About',
     url: '#about',
+    layout: aboutPage(),
   },
   {
     label: 'Program',
