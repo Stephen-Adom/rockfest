@@ -129,6 +129,16 @@
   font-size: 2.5rem;
 }
 
+.about-footer {
+  background-color: #fff;
+  color: var(--dark);
+}
+
+/* stylelint-disable-next-line no-descending-specificity */
+.about-footer p {
+  font-size: 14px;
+}
+
 /* ABOUT PAGE CSS */
 
 /* Medium devices (tablets, 768px and up */
@@ -173,6 +183,20 @@
 
   .logo-display .logo-name {
     font-size: 2.5rem;
+  }
+
+  #event-history .container {
+    padding-top: 61px !important;
+    padding-bottom: 140px !important;
+  }
+
+  .about-footer {
+    color: #fff;
+    background-color: var(--dark);
+  }
+
+  .about-footer p {
+    font-size: 16px;
   }
 }
 

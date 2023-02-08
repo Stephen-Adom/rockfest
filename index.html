@@ -62,99 +62,75 @@
     </div>
     <!-- OFFCANVAS NAVBAR-->
 
-    <nav class="navbar navbar-expand-lg fixed-top">
-      <div class="container">
-        <button
-          class="navbar-toggler border border-0"
-          type="button"
-          aria-label="Toggle navigation"
-          data-bs-toggle="offcanvas"
-          data-bs-target="#sidebar"
-          aria-controls="sidebarNavbar"
+    <header class="fixed-top">
+      <div class="subheader">
+        <div
+          class="container d-flex align-items-center justify-content-end py-1 gap-4"
         >
-          <img
-            src="./assets/images/burger-bar.png"
-            width="40px"
-            alt="menu bars"
-          />
-        </button>
-        <a class="navbar-brand d-none d-lg-block" href="#">
-          <div
-            class="logo d-flex align-items-center justify-content-center gap-1"
+          <div class="social-links d-flex align-items-center gap-3">
+            <a href="#">
+              <img
+                src="./assets/images/facebook-app-symbol.png"
+                width="16px"
+                alt="facebook"
+              />
+            </a>
+
+            <a href="#">
+              <img
+                src="./assets/images/twitter.png"
+                width="16px"
+                alt="twitter"
+              />
+            </a>
+          </div>
+
+          <div class="sub-links d-flex align-items-center gap-4">
+            <a href="#">English</a>
+            <a href="#">My Page</a>
+            <a href="#">Logout</a>
+          </div>
+        </div>
+      </div>
+      <nav class="navbar navbar-expand-lg">
+        <div class="container">
+          <button
+            class="navbar-toggler border border-0"
+            type="button"
+            aria-label="Toggle navigation"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#sidebar"
+            aria-controls="sidebarNavbar"
           >
             <img
-              src="assets/images/rock_fest_logo.jpg"
-              width="55px"
-              alt="rock fest"
+              src="./assets/images/burger-bar.png"
+              width="40px"
+              alt="menu bars"
             />
-            <h5 class="logo-name">
-              rock<span class="logo-name-orange">fest</span>
-            </h5>
+          </button>
+          <a class="navbar-brand d-none d-lg-block" href="#">
+            <div
+              class="logo d-flex align-items-center justify-content-center gap-1"
+            >
+              <img
+                src="assets/images/rock_fest_logo.jpg"
+                width="55px"
+                alt="rock fest"
+              />
+              <h5 class="logo-name">
+                rock<span class="logo-name-orange">fest</span>
+              </h5>
+            </div>
+          </a>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mb-2 mb-lg-0"></ul>
+            <a href="#" title="Buy ticket" class="navbar-btn">Buy Ticket</a>
           </div>
-        </a>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav mb-2 mb-lg-0"></ul>
-          <a href="#" title="Buy ticket" class="navbar-btn">Buy Ticket</a>
         </div>
-      </div>
-    </nav>
+      </nav>
+    </header>
 
     <main id="main"></main>
-
-    <section id="partners">
-      <div class="container py-5 px-0">
-        <h1
-          class="partner-section-title section-title text-white text-center fw-bold"
-        >
-          Partner
-        </h1>
-
-        <div
-          class="partners-content d-flex align-items-center justify-content-center flex-wrap gap-4 gap-lg-5 mt-5"
-        >
-          <div class="partner-card">
-            <img src="assets/images/mozilla.png" width="100%" alt="mozilla" />
-          </div>
-          <div class="partner-card">
-            <img src="assets/images/google.png" width="100%" alt="google" />
-          </div>
-          <div class="partner-card">
-            <img src="assets/images/naver.png" width="100%" alt="naver" />
-          </div>
-          <div class="partner-card">
-            <img src="assets/images/kakao1.png" width="100%" alt="kakao" />
-          </div>
-          <div class="partner-card">
-            <img src="assets/images/airbnb.png" width="100%" alt="airbnb" />
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <footer id="footer">
-      <div
-        class="container py-5 px-0 d-flex align-items-center justify-content-between justify-content-sm-between justify-content-md-between justify-content-lg-start gap-lg-5"
-      >
-        <div
-          class="logo d-flex align-items-center justify-content-center gap-1"
-        >
-          <img
-            src="assets/images/rock_fest_logo.jpg"
-            width="55px"
-            alt="rock fest"
-          />
-          <h5 class="logo-name">
-            rock<span class="logo-name-orange">fest</span>
-          </h5>
-        </div>
-        <div
-          class="d-flex align-items-start align-items-sm-start align-items-md-center align-items-lg-center flex-column flex-sm-column flex-md-row flex-lg-row gap-lg-2"
-        >
-          <p>2023 Rockfest by Designesia.</p>
-          <p>Some Rights Reserved.</p>
-        </div>
-      </div>
-    </footer>
 
     <button type="button" title="Scroll to top" class="scroll_to_top hide">
       <svg

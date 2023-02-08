@@ -118,6 +118,64 @@ const aboutPage = () => `      <section id="about-headline" class="about-headlin
         </div>
       </div>
     </div>
-  </section>`;
+  </section>
+
+  <section id="partners" class="d-block d-sm-block d-md-none d-lg-none d-lg-none">
+<div class="container py-5 px-0">
+  <h1
+    class="partner-section-title section-title text-white text-center fw-bold"
+  >
+    Partner
+  </h1>
+
+  <div
+    class="partners-content d-flex align-items-center justify-content-center flex-wrap gap-4 gap-lg-5 mt-5"
+  >
+    <div class="partner-card">
+      <img src="assets/images/mozilla.png" width="100%" alt="mozilla" />
+    </div>
+    <div class="partner-card">
+      <img src="assets/images/google.png" width="100%" alt="google" />
+    </div>
+    <div class="partner-card">
+      <img src="assets/images/naver.png" width="100%" alt="naver" />
+    </div>
+    <div class="partner-card">
+      <img src="assets/images/kakao1.png" width="100%" alt="kakao" />
+    </div>
+    <div class="partner-card">
+      <img src="assets/images/airbnb.png" width="100%" alt="airbnb" />
+    </div>
+  </div>
+</div>
+</section>
+
+
+  <footer id="about-footer" class="about-footer">
+<div
+  class="container py-5 px-4 px-lg-0 px-md-0 px-xl-0 d-flex align-items-center justify-content-between justify-content-sm-between justify-content-md-between justify-content-lg-start gap-lg-5"
+>
+  <div
+    class="logo d-flex align-items-center flex-column flex-sm-column flex-md-row flex-lg-row justify-content-center gap-1"
+  >
+    <img
+      src="assets/images/rock_fest_logo_2.png"
+      width="55px"
+      alt="rock fest"
+    />
+    <h5 class="logo-name mb-0">
+      rock<span class="logo-name-orange">fest</span>
+    </h5>
+  </div>
+  <div
+    class="d-flex align-items-start align-items-sm-start align-items-md-center align-items-lg-center flex-column flex-sm-column flex-md-row flex-lg-row gap-lg-2"
+  >
+    <p class="mb-0">2023 Rockfest by Designesia.</p>
+    <p class="mb-0">Some Rights Reserved.</p>
+  </div>
+</div>
+</footer>
+  
+  `;
 
 export default aboutPage;

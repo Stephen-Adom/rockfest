@@ -1,3 +1,4 @@
+/* stylelint-disable no-descending-specificity */
 /* stylelint-disable scss/at-rule-no-unknown */
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Righteous&display=swap');
 
@@ -84,6 +85,25 @@ body::-webkit-scrollbar-thumb:hover {
 .navbar-btn:active {
   background-color: var(--orange);
   color: #fff;
+}
+
+.subheader {
+  background-color: #3e3e3e;
+  display: none;
+}
+
+.subheader .social-links a:nth-child(1) img {
+  filter: invert(1);
+}
+
+.subheader .social-links a:nth-child(2) img {
+  filter: grayscale(1) brightness(3.5);
+}
+
+.subheader .sub-links a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 15px;
 }
 
 /* HOME PAGE CSS */
@@ -529,6 +549,10 @@ body::-webkit-scrollbar-thumb:hover {
 }
 
 @media (min-width: 992px) {
+  .subheader {
+    display: block;
+  }
+
   #headline {
     width: 100%;
     min-height: 730px;
