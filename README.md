@@ -28,7 +28,7 @@
 
 <!-- PROJECT DESCRIPTION -->
 
-## 📖 Personal Portfolio <a name="about-project"></a>
+## 📖 Project Summary <a name="about-project"></a>
 
 Rockfest is a responsive, well-designed, website template for music events, concerts, festivals, night club and more. Rockfest is built with modern technologies like HTML5, CSS3, Bootstrap and CSS3 Animation. Rockfest websites shows rock festival which is a series of musical performances by a variety of artists, which generally take place over a number of days. Some festivals are singular events, while others recur annually in the same location.
 
